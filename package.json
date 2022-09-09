@@ -4,7 +4,12 @@
 	"main": "index.ts",
 	"scripts": {
 		"start": "nodemon -w ./src",
-		"test-all": "jest"
+		"test-all": "jest",
+		"test-e01": "jest --runTestsByPath src/E01_reverse_text/exercise-tests.test.ts",
+		"test-e02": "jest --runTestsByPath src/E02_vowel_count/exercise-tests.test.ts",
+		"test-e03": "jest --runTestsByPath src/E03_fizzbuzz/exercise-tests.test.ts",
+		"test-e04": "jest --runTestsByPath src/E04_counting_sheeps/exercise-tests.test.ts",
+		"test-e05": "jest --runTestsByPath src/E05_gifts_list/exercise-tests.test.ts"
 	},
 	"author": "",
 	"license": "ISC",

@@ -1,6 +1,5 @@
-const world = 'world';
+console.log('#################################');
+console.log('KATAS COMPILATION ');
+console.log('#################################');
 
-export function hello(who: string = world): string {
-	return `Hello ${who}! `;
-}
-console.log(hello());
+// You can test your code here.
