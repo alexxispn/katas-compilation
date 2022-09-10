@@ -57,6 +57,7 @@
 		"no-param-reassign": [2, { "props": false }],
 		"prefer-destructuring": "off",
 		"function-paren-newline": "off",
+		"comma-dangle": 0,
 		"@typescript-eslint/interface-name-prefix": "off",
 		"@typescript-eslint/explicit-function-return-type": "warn",
 		"@typescript-eslint/explicit-module-boundary-types": "off",
