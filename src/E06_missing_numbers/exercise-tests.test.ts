@@ -16,4 +16,7 @@ describe('E06. Números perdidos', () => {
 	test('Pasando [1, 2, 3, 4, 5] debe de retornar []', () => {
 		expect(getMissingNumbers([1, 2, 3, 4, 5])).toEqual([]);
 	});
+	test('Pasando [1] debe de retornar []', () => {
+		expect(getMissingNumbers([1])).toEqual([]);
+	});
 });
