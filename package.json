@@ -11,7 +11,10 @@
 		"test-e04": "jest --runTestsByPath src/E04_counting_sheeps/exercise-tests.test.ts",
 		"test-e05": "jest --runTestsByPath src/E05_gifts_list/exercise-tests.test.ts",
 		"test-e06": "jest --runTestsByPath src/E06_missing_numbers/exercise-tests.test.ts",
-		"test-e07": "jest --runTestsByPath src/E07_pokemon_battle/exercise-tests.test.ts"
+		"test-e07": "jest --runTestsByPath src/E07_pokemon_battle/exercise-tests.test.ts",
+		"test-e08": "jest --runTestsByPath src/E08_cheese_hunt/exercise-tests.test.ts",
+		"test-e09": "jest --runTestsByPath src/E09_loyalty_card/exercise-tests.test.ts",
+		"test-e10": "jest --runTestsByPath src/E10_change_machine/exercise-tests.test.ts"
 	},
 	"author": "",
 	"license": "ISC",
