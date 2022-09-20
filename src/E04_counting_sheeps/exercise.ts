@@ -1,9 +1,20 @@
 interface Sheep {
-	name: string;
-	color: string;
+    name: string;
+    color: string;
 }
 
+const isValid = (sheep: Sheep): boolean => {
+    return (sheep.color === 'rojo') &&
+    (sheep.name.toLowerCase().includes('a')) &&
+    (sheep.name.toLowerCase().includes('n'));
+};
+
 export function filterSheeps(sheeps: Sheep[]): Sheep[] {
-	// Escribe tu código aquí
-	return [];
+    const validSheeps: Sheep[] = [];
+    for (const sheep of sheeps) {
+        if (isValid(sheep)) {
+            validSheeps.push(sheep);
+        }
+    }
+    return validSheeps;
 }

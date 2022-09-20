@@ -1,4 +1,5 @@
 export function reverseText(text: string): string {
-	// Escribe tu código aquí
-	return '';
+	const words = text.split(' ');
+	const reversedWords = words.reverse();
+	return reversedWords.join(' ');
 }

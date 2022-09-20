@@ -66,6 +66,15 @@ describe('E08. El ratón y el queso', () => {
 		expect(canMouseEat('down', room)).toBe(true);
 		expect(canMouseEat('left', room)).toBe(true);
 		expect(canMouseEat('right', room)).toBe(false);
+		room = [
+			['*', ' ', ' '],
+			['m', '*', ' '],
+			[' ', '*', '*'],
+		];
+		expect(canMouseEat('up', room)).toBe(true);
+		expect(canMouseEat('down', room)).toBe(false);
+		expect(canMouseEat('left', room)).toBe(false);
+		expect(canMouseEat('right', room)).toBe(true);
 	});
 	test('Direcciones que salgan de la habitación devolverán falso', () => {
 		const room = [['m', '*', ' ']];
