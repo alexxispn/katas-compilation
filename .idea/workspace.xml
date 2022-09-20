@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1983849f-ea01-4c77-b9a1-85e0b242370b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/E01_reverse_text/exercise.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E01_reverse_text/exercise.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E02_vowel_count/exercise.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E02_vowel_count/exercise.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E03_fizzbuzz/exercise.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E03_fizzbuzz/exercise.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E04_counting_sheeps/exercise.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E04_counting_sheeps/exercise.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E05_gifts_list/exercise.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E05_gifts_list/exercise.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E06_missing_numbers/exercise.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E06_missing_numbers/exercise.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E07_pokemon_battle/exercise.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E07_pokemon_battle/exercise.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E08_cheese_hunt/exercise-tests.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E08_cheese_hunt/exercise-tests.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E08_cheese_hunt/exercise.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E08_cheese_hunt/exercise.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E09_loyalty_card/exercise.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E09_loyalty_card/exercise.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/E10_change_machine/exercise.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/E10_change_machine/exercise.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +47,7 @@
       <updated>1662996598355</updated>
       <workItem from="1662996599655" duration="136000" />
       <workItem from="1663671320508" duration="9890000" />
+      <workItem from="1663683864430" duration="571000" />
     </task>
     <servers />
   </component>
