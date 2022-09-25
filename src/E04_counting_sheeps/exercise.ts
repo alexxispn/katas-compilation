@@ -11,10 +11,10 @@ const isValid = (sheep: Sheep): boolean => {
 
 export function filterSheeps(sheeps: Sheep[]): Sheep[] {
     const validSheeps: Sheep[] = [];
-    for (const sheep of sheeps) {
+    sheeps.forEach(sheep => {
         if (isValid(sheep)) {
             validSheeps.push(sheep);
         }
-    }
+    });
     return validSheeps;
 }

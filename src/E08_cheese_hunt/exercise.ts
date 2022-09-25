@@ -8,7 +8,7 @@ enum DirectionEnum {
 type DirectionType = keyof typeof DirectionEnum;
 const MOUSE_SYMBOL = 'm';
 const CHEESE_SYMBOL = '*';
-const getMousePosition = (room: string[][]) => {
+const getMousePosition = (room: string[][]): any => {
 	for (let y = 0; y < room.length; y++) {
 		for (let x = 0; x < room[y].length; x++) {
 			if (room[y][x] === MOUSE_SYMBOL) {

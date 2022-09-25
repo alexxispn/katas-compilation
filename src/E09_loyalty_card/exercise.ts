@@ -1,8 +1,8 @@
 const normalPrice = 12;
 const loyaltyPrice = 250;
 const discount = 0.75;
-const getNormalPrice = (numOfTickets: number) => normalPrice * numOfTickets;
-const getLoyaltyPrice = (numOfTickets: number) => {
+const getNormalPrice = (numOfTickets: number): number => normalPrice * numOfTickets;
+const getLoyaltyPrice = (numOfTickets: number): number => {
     let price = loyaltyPrice;
     for (let i = 0; i < numOfTickets; i++) {
         price += normalPrice * discount ** i;
