@@ -1,14 +1,16 @@
+const COINS_VALUES = [1, 2, 5, 10, 20, 50];
+
 export function getChangeInCoins(change: number): number[] {
-    const changeInCoins = [0, 0, 0, 0, 0, 0];
-    const coinValues = [1, 2, 5, 10, 20, 50];
+    const changeInCoins = Array(COINS_VALUES.length)
+        .fill(0);
     let remainingChange = change;
-    let i = 5;
+    let i = COINS_VALUES.length - 1;
     while (remainingChange > 0) {
-        if (remainingChange >= coinValues[i]) {
-            remainingChange -= coinValues[i];
-            changeInCoins[i]++;
+        if (remainingChange < COINS_VALUES[i]) {
+            i -= 1;
         } else {
-            i--;
+            remainingChange -= COINS_VALUES[i];
+            changeInCoins[i] += 1;
         }
     }
     return changeInCoins;
