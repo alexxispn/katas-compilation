@@ -3,18 +3,11 @@ interface Sheep {
     color: string;
 }
 
-const isValid = (sheep: Sheep): boolean => {
-    return (sheep.color === 'rojo') &&
-    (sheep.name.toLowerCase().includes('a')) &&
-    (sheep.name.toLowerCase().includes('n'));
-};
+const hasValidName = (sheep: Sheep): boolean => sheep.name.toLowerCase()
+    .includes('a') && sheep.name.toLowerCase()
+    .includes('n');
+const hasValidColor = (sheep: Sheep): boolean => sheep.color === 'rojo';
 
 export function filterSheeps(sheeps: Sheep[]): Sheep[] {
-    const validSheeps: Sheep[] = [];
-    sheeps.forEach(sheep => {
-        if (isValid(sheep)) {
-            validSheeps.push(sheep);
-        }
-    });
-    return validSheeps;
+    return sheeps.filter(sheep => hasValidName(sheep) && hasValidColor(sheep));
 }

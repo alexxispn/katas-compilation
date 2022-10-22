@@ -3,22 +3,17 @@ export interface GifList {
 }
 
 const transformList = (list: string): string[] => {
-    const CROSS = '_';
-    const gifts = list.split(' ');
-    const giftsWithoutCross = gifts.filter(gift => !gift.startsWith(CROSS));
-    const giftsWithoutCrossAndSpaces = giftsWithoutCross.filter(gift => gift !== '');
-    return giftsWithoutCrossAndSpaces.map(gift => gift.toLowerCase());
+    const invalidGiftSymbol = '_';
+    return list.toLowerCase()
+        .split(' ')
+        .filter(gift => !gift.startsWith(invalidGiftSymbol) && gift !== '');
 };
 
 export function getGiftList(list: string): GifList {
-    const gifts = transformList(list);
     const giftList: GifList = {};
-    gifts.forEach(gift => {
-        if (giftList[gift]) {
-            giftList[gift] += 1;
-        } else {
-            giftList[gift] = 1;
-        }
+    const gifts = transformList(list);
+    gifts.forEach((gift: string) => {
+        giftList[gift] = giftList[gift] ? giftList[gift] + 1 : 1;
     });
     return giftList;
 }
