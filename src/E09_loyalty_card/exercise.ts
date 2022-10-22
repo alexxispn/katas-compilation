@@ -4,15 +4,12 @@ const discount = 0.75;
 const getNormalPrice = (numOfTickets: number): number => normalPrice * numOfTickets;
 const getLoyaltyPrice = (numOfTickets: number): number => {
     let price = loyaltyPrice;
-    for (let i = 0; i < numOfTickets; i++) {
-        price += normalPrice * discount ** i;
+    for (let ticket = 1; ticket <= numOfTickets; ticket += 1) {
+        price += normalPrice * discount ** ticket;
     }
     return price;
 };
 
 export function shouldBuyLoyaltyCard(numOfTickets: number): boolean {
-    if (numOfTickets < 1) return false;
-    const finalNormalPrice = getNormalPrice(numOfTickets);
-    const finalLoyaltyPrice = getLoyaltyPrice(numOfTickets);
-    return finalNormalPrice > finalLoyaltyPrice;
+    return getLoyaltyPrice(numOfTickets) < getNormalPrice(numOfTickets);
 }
