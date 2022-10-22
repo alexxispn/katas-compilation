@@ -31,8 +31,8 @@ export function getAttackDamage(
     attack: number,
     defense: number
 ): number {
-    const areStatsInvalid: boolean = attack <= 0 || defense <= 0 || attack > 100 || defense > 100;
-    if (areStatsInvalid) return -1;
+    const areStatsValid: boolean = attack > 0 && attack <= 100 && defense > 0 && defense <= 100;
+    if (!areStatsValid) return -1;
     const effectivity = getEffectivity(attackerType, defenderType);
     const damage = 50 * (attack / defense) * effectivity;
     return Number(damage.toFixed(2));
