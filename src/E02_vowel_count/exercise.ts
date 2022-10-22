@@ -1,12 +1,6 @@
 export function getVowelCount(text: string): number {
-    let count = 0;
-    const vowels = 'aeiouáéíóú';
-    text.toLowerCase()
-        .split('')
-        .forEach(letter => {
-            if (vowels.includes(letter)) {
-                count++;
-            }
-        });
-    return count;
+    const vowels = 'aeiouáéíóúü';
+    const charsArray = text.toLowerCase()
+        .split('');
+    return charsArray.reduce((count, char) => (vowels.includes(char) ? count + 1 : count), 0);
 }
